@@ -1,0 +1,49 @@
+.container
+{
+height: 100vh;
+ background-image: url('../../../public/assets/img/login.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+
+ 
+.card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+flex-wrap: wrap;
+
+
+}
+.innerCard
+{
+    width: 400px;
+   
+    margin: 10px;
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+    border:1px solid white ;
+    border-radius: 12px;
+    
+
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    gap:12px;
+
+}
+.btn button{
+    width: 80px;
+    border: 1px solid lightgrey;
+    background-color: gray;
+    color: whitesmoke;
+    border-radius:7px ;
+}

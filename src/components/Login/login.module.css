@@ -1,0 +1,64 @@
+.containerfluid {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 700px;
+  width: 1000px;
+  /* background:linear-gradient(130deg,rgb(238, 177, 208),rgb(226, 206, 245)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.innerContainer {
+  height: 610px;
+  width: 800px;
+  box-shadow: 5px 5px 10px rgba(216, 29, 29, 0.3);
+  margin-left: 20px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 0px 0px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.textField {
+  width: 300px !important; /* Adjust the width as needed */
+  height: 40px !important; /* Adjust the height as needed */
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.btn {
+  width: 100%;
+}

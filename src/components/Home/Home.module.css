@@ -1,0 +1,31 @@
+
+.container
+{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+   
+}
+.outerCard
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+
+    width:100%;
+   
+    margin: 10px; 
+}
+.innerCard
+{ width: 400px;
+   
+    margin: 10px;
+   
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+    border:1px solid white ;
+    border-radius: 12px;
+}

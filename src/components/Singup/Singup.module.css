@@ -1,0 +1,157 @@
+.containerfluid {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container {
+  height: 700px;
+  width: 1000px;
+  /* background:linear-gradient(130deg,rgb(238, 177, 208),rgb(226, 206, 245)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  
+}
+
+.formBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ flex: 2;
+
+}
+
+.box {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 5px;
+  padding:80px 0px 40px 100px;
+  margin-bottom: 20px;
+}
+.innerContainer {
+  height: 610px;
+  width:  1000px;
+  box-shadow: 5px 5px 10px rgba(216, 29, 29, 0.3);
+  margin-left: 20px;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+    .btn {
+        margin-left: 100px;
+        width: 55%;
+      }
+      
+
+      .anchor
+      {
+        padding-top :100px
+      }
+
+/* .lbl
+{
+    font-size: 25px;
+    font-weight: 400;
+    margin-right:10px ;
+    color: rgb(128, 133, 129);
+
+
+}
+.email
+{
+    margin-left:54px; 
+
+}
+.pswrd
+{
+    margin-left:25px; 
+
+}
+.Phone{
+    margin-left:53px; 
+
+}
+.Name{
+    margin-left:55px; 
+
+}
+.Field{
+    margin-left:65px;
+}
+.Age{
+    margin-left:75px;
+}
+.Experience
+{
+    margin-left:5px;
+}
+
+.email ,.pswrd, .Phone ,.Name ,.Field , .Age ,.Experience{
+    height: 30px;
+    width: 200px;
+    border: none;
+border-radius: 10px;
+   
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.e ,.p,.ph,.na,.f,.A,.ex{
+    margin-bottom:20px
+
+}
+
+
+.btn button
+{
+   
+    width: 100px;
+    height: 30px;
+ border-radius: 50px;
+
+    margin-top: 90px;
+ font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: background-color 1s ,color 1s;
+
+}
+.btn button:hover{
+ 
+    border: 1px solid rgb(229, 160, 228);
+    color: white;
+    background-color: black;
+
+}
+.anchor
+{
+    position: relative;
+    top: 40px;
+}
+ 
+.anchor a{
+    text-decoration: none;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 400;
+  transition: color 0.3s,text-decoration 0.3s;
+cursor: pointer;
+
+}
+.anchor a:hover{
+    text-decoration:underline;
+    color: rgb(147, 11, 45);
+} */
