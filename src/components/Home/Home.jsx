@@ -5,6 +5,7 @@ import axios from "axios";
 import Logout from "../LogOut/Logout";
 import UserPost from "../UserPosts/UserPost";
 import ClickPost from "../UserPosts/ClickPost";
+import Navbar from "../NavBar/Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -33,6 +34,9 @@ const Home = () => {
 
   return (
     <>
+    <div>
+    <Navbar />
+   </div>
       <div className={style.cont}>
         <div>
           <h1>Job Portal</h1>

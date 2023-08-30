@@ -4,14 +4,30 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import style from "../JobPortal/JobPortal.module.css";
+import Navbar from "../NavBar/Navbar";
 
 const JobPortal = () => {
+  
+  const formData = new FormData();
+
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
   const [salary, setSalary] = useState("");
   const [experience, setExperience] = useState("");
   const [type, setType] = useState("");
+
+const [postImg,setPostImg]= useState("");
+
+formData.append("title",title);
+formData.append("location",location)
+formData.append("salary",salary)
+formData.append("experience",experience)
+formData.append("type",type)
+formData.append("postImg",postImg)
+
+console.log(postImg)
+
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
@@ -25,7 +41,8 @@ const JobPortal = () => {
       if (uId) {
         const res = await axios.post(
           `http://localhost:5000/api/post/CreatePost/${uId}`,
-          { jobTitle: title, salary, location, jobtype: type, experience }
+          // { jobTitle: title, salary, location, jobtype: type, experience }
+            formData
         );
 
         setTitle("");
@@ -42,12 +59,15 @@ const JobPortal = () => {
 
   return (
     <>
+    <div>
+    <Navbar/>
+   </div>
       <div className={style.containerLib}>
         <h1>Welcome to JobPortal!</h1>
 
         <div className={style.container}>
           <div className={style.body}>
-            <form onSubmit={jobPost} className={style.form}>
+            <form onSubmit={jobPost} className={style.form}  enctype="multipart/form-data" >
               <label>
                 Title :{" "}
                 <input
@@ -95,7 +115,15 @@ const JobPortal = () => {
                   value={type}
                 />
               </label>
-
+              <label>
+               Image:
+                <input
+                  type="File"
+                  onChange={(e) => setPostImg(e.target.files[0])}
+                  placeholder="postImg"
+                
+                />
+              </label>
               <input type="submit" value="Post" />
             </form>
           </div>

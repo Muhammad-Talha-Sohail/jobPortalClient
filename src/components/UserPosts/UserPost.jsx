@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import style from "./UserPost.module.css";
+import Navbar from "../NavBar/Navbar";
 const UserPost = () => {
   const [data, setData] = useState([]);
 
@@ -44,6 +45,9 @@ const UserPost = () => {
   };
   return (
     <>
+    <div>
+    <Navbar/>
+   </div>
       <div className={style.container}>
         <div className={style.header}>
           <h1>Hello on User Post</h1>

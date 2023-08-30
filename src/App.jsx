@@ -16,9 +16,7 @@ const App = () => {
    <>  
 
    <BrowserRouter>
-   <div>
-    <Navbar/>
-   </div>
+   
    <Routes>
     
     <Route path="/" element={<Login />}></Route>
